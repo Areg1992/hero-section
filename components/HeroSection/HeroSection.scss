@@ -30,16 +30,23 @@
 }
 
 
+.titleObjects {
+  right: em(-195);
+  top: em(65);
+  position: absolute;
+}
+
+.icon1 {
+  width: em(43);
+}
+
 .icon2 {
+  width: em(88);
   margin-top: em(-65);
   margin-left: em(-15);
 }
 
-.titleObjects {
-  right: -65%;
-  top: 42%;
-  position: absolute;
-}
+
 
 .buttonGroup {
   column-gap: em(23);

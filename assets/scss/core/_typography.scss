@@ -16,6 +16,7 @@ h2 {
 .description {
 
   p {
+    margin: 0;
     @include font(20, 1.35, $blackColor, 400, 0, $AvenirNextLTPro);
   }
 }

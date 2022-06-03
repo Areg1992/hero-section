@@ -25,11 +25,12 @@ const Index = () => {
                 <div className="flex-container align-middle buttonGroup">
                     <Button
                         fullBtn={true}
+                        link="as"
                         text={"Download Sator App"}
                     />
                     <Button
-                        className="hide-for-mobile"
                         fullBtn={true}
+                        link="as"
                         text={"Enter the NFT Marketplace"}
                     />
                 </div>

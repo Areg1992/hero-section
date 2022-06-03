@@ -1,7 +1,7 @@
 @import 'assets/scss/utils/_module';
 
 .btn {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   background: none;
   border: 0;
@@ -27,12 +27,16 @@
       border-radius: 8px;
     }
     span {
-      @include font(20, 1, 0, 600, 0, "K2D");
+      @include font(20, 1, $blackColor, 600, 0, "K2D");
     }
   }
 
   &-block {
     flex: 1;
     justify-content: center;
+    
+    @media (max-width: 1023px) {
+      flex: none;
+    }
   }
 }
