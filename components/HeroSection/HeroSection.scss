@@ -1,0 +1,59 @@
+@import "assets/scss/utils/_module";
+
+.wrapper {
+  position: relative;
+
+  &:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 62%;
+    z-index: -1;
+    background-image: url("../../assets/img/Ellipse.svg");
+    height: em(987);
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: cover;
+  }
+}
+
+
+.cover {
+  margin: em(89) auto;
+  max-width: em(796);
+}
+
+.title {
+  position: relative;
+  display: inline-flex;
+}
+
+
+.icon2 {
+  margin-top: em(-65);
+  margin-left: em(-15);
+}
+
+.titleObjects {
+  right: -65%;
+  top: 42%;
+  position: absolute;
+}
+
+.buttonGroup {
+  column-gap: em(23);
+  max-width: em(790);
+  margin: em(49) auto em(34);
+}
+
+.appLinks {
+  margin-bottom: em(30);
+  column-gap: em(30);
+}
+
+@media (max-width: 1024px) {
+    .buttonGroup {
+      flex-direction: column;
+    }
+}

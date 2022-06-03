@@ -1,39 +1,39 @@
 import React from 'react';
 import Image from 'next/image';
-import styles from './HeroSection.module.css';
 import Button from '../Button';
 
 const Index = () => {
     return (
-        <section className={`text-center ${styles.wrapper}`}>
-            <div className={styles.cover}>
-                <div className={styles.title}>
+        <section className="text-center wrapper">
+            <div className="cover">
+                <div className="title">
                     <h1>
                         sator
                     </h1>
-                    <div className={styles.titleObjects}>
-                        <i className={styles.icon1}>
-                            <Image src="/Vector1.svg" alt="" width={43} height={43} />
+                    <div className="flex-container titleObjects">
+                        <i className="icon1">
+                            <Image src="/Vector1.svg" alt="icon" width={43} height={43} />
                         </i>
-                        <i className={styles.icon2}>
-                            <Image src="/Vector2.svg" alt="" width={88} height={88} />
+                        <i className="icon2">
+                            <Image src="/Vector2.svg" alt="icon" width={88} height={88} />
                         </i>
                     </div>
                 </div>
                 <h2>
                     Web3 entertainment network
                 </h2>
-                <div className={`flex-container align-middle ${styles.buttonGroup}`}>
+                <div className="flex-container align-middle buttonGroup">
                     <Button
                         fullBtn={true}
                         text={"Download Sator App"}
                     />
                     <Button
+                        className="hide-for-mobile"
                         fullBtn={true}
                         text={"Enter the NFT Marketplace"}
                     />
                 </div>
-                <div className={`flex-container align-middle align-center ${styles.appLinks}`}>
+                <div className="flex-container align-middle align-center appLinks">
                     <a href="" target="_blank">
                         <Image src="/Group77.svg" alt="" width={22} height={17} />
                     </a>
