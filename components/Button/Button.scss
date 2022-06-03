@@ -16,6 +16,7 @@
     background: white;
     background-clip: padding-box;
 
+
     &:after {
       position: absolute;
       top: -2px; bottom: -2px;
@@ -25,10 +26,10 @@
       z-index: -1;
       border-radius: 8px;
     }
-
+    span {
+      @include font(20, 1, 0, 600, 0, "K2D");
+    }
   }
-
-
 
   &-block {
     flex: 1;

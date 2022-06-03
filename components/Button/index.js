@@ -5,11 +5,15 @@ const Index = ({...props}) => {
         <>
             {props.link ? (
                 <a href={props.link} className={`btn btn-primary ${props.fullBtn ? 'btn-block' : null}`}>
-                    {props.text}
+                    <span>
+                        {props.text}
+                    </span>
                 </a>
             ):(
                 <button {...props} className={`btn btn-primary ${props.fullBtn ? 'btn-block' : null}`}>
-                    {props.text}
+                    <span>
+                        {props.text}
+                    </span>
                 </button>
             )}
         </>
