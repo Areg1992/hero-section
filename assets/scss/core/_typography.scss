@@ -1,0 +1,21 @@
+h1 {
+  margin: 0;
+  background: linear-gradient(100.96deg, #FF36EB -41.47%, #1BA2EE 104.91%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  @include font(128, 1.21, 0, 400, 0, $segoiUI);
+}
+
+h2 {
+  margin: 0;
+  @include font(48, 1.1, $blackColor, 700, 0, $segoiUI);
+}
+
+.description {
+
+  p {
+    @include font(20, 1.35, $blackColor, 400, 0, $segoiUI);
+  }
+}

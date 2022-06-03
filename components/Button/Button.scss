@@ -1,0 +1,37 @@
+@import 'assets/scss/utils/_module';
+
+.btn {
+  display: flex;
+  align-items: center;
+  background: none;
+  border: 0;
+  outline: none;
+  height: em(66);
+  cursor: pointer;
+
+  &-primary {
+    position: relative;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    background: white;
+    background-clip: padding-box;
+
+    &:after {
+      position: absolute;
+      top: -2px; bottom: -2px;
+      left: -2px; right: -2px;
+      background:  linear-gradient(90.29deg, #5E5AFF 0%, #AD28FF 22.92%, #28E5FF 51.56%, #FF8F28 75.52%, #5E5AFF 100%);
+      content: '';
+      z-index: -1;
+      border-radius: 8px;
+    }
+
+  }
+
+
+
+  &-block {
+    flex: 1;
+    justify-content: center;
+  }
+}
