@@ -5,12 +5,12 @@ h1 {
   -webkit-text-fill-color: transparent;
   background-clip: text;
   text-fill-color: transparent;
-  @include font(128, 1.21, 0, 400, 0, "Inter");
+  @include font(128, 1.21, 0, 400, 0, $Inter);
 }
 
 h2 {
   margin: 0;
-  @include font(48, 1.1, $blackColor, 700, 0, "K2D");
+  @include font(48, 1.1, $blackColor, 700, 0, $K2D);
 }
 
 .description {

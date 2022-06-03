@@ -46,10 +46,8 @@
   margin-left: em(-15);
 }
 
-
-
 .buttonGroup {
-  column-gap: em(23);
+  gap: em(23);
   max-width: em(790);
   margin: em(49) auto em(34);
 }
