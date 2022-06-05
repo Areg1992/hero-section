@@ -6,9 +6,9 @@
   background: none;
   border: 0;
   outline: none;
-  height: em(66);
+  height: 66px;
   cursor: pointer;
-  padding: 0 em(20);
+  padding: 0 20px;
 
   &-primary {
     position: relative;
@@ -28,7 +28,9 @@
       border-radius: 8px;
     }
     span {
-      @include font(20, 1, $blackColor, 600, 0, "K2D");
+      @include font(20, 1, $blackColor, 400, 0, $AvenirNextLTPro);
+      @include fluid-font(320px, 740px, 14px, 19px);
+      @include fluid-font(744px, 1920px, 20px, 20px);
     }
   }
 

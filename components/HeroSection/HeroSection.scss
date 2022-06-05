@@ -11,7 +11,7 @@
     top: 62%;
     z-index: -1;
     background-image: url("../../assets/img/Ellipse.svg");
-    height: em(987);
+    height: 987px;
     background-repeat: no-repeat;
     background-position: bottom center;
     background-size: cover;
@@ -20,8 +20,10 @@
 
 
 .cover {
-  margin: em(89) auto;
-  max-width: em(796);
+  margin: 89px auto;
+  max-width: 826px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 .title {
@@ -31,30 +33,45 @@
 
 
 .titleObjects {
-  right: em(-195);
-  top: em(65);
+  right: -195px;
+  top: 65px;
   position: absolute;
+
+  @media (max-width: $mobile) {
+    right: -74px;
+    top: 15px;
+  }
 }
 
 .icon1 {
-  width: em(43);
+  width: 43px;
+
+  @media (max-width: $mobile) {
+    width: 17px;
+  }
 }
 
 .icon2 {
-  width: em(88);
-  margin-top: em(-65);
-  margin-left: em(-15);
+  width: 88px;
+  margin-top: -65px;
+  margin-left: -15px;
+
+  @media (max-width: $mobile) {
+    width: 35px;
+    margin-top: -25px;
+    margin-left: -5px;
+  }
 }
 
 .buttonGroup {
-  gap: em(23);
-  max-width: em(790);
-  margin: em(49) auto em(34);
+  gap: 23px;
+  max-width: 790px;
+  margin: 49px auto 34px;
 }
 
 .appLinks {
-  margin-bottom: em(30);
-  column-gap: em(30);
+  margin-bottom: 30px;
+  column-gap: 30px;
 }
 
 @media (max-width: 1024px) {

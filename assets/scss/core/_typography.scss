@@ -5,12 +5,16 @@ h1 {
   -webkit-text-fill-color: transparent;
   background-clip: text;
   text-fill-color: transparent;
-  @include font(128, 1.21, 0, 400, 0, $Inter);
+  @include font(48, 1.21, 0, 400, 0, $Inter);
+  @include fluid-font(320px, 740px, 48px, 48px);
+  @include fluid-font(744px, 1920px, 128px, 128px);
 }
 
 h2 {
   margin: 0;
-  @include font(48, 1.1, $blackColor, 700, 0, $K2D);
+  @include font(23, 1.1, $blackColor, 700, 0, $K2D);
+  @include fluid-font(320px, 740px, 23px, 35px);
+  @include fluid-font(744px, 1920px, 36px, 48px);
 }
 
 .description {
@@ -18,5 +22,6 @@ h2 {
   p {
     margin: 0;
     @include font(20, 1.35, $blackColor, 400, 0, $AvenirNextLTPro);
+    @include fluid-font(320px, 1920px, 18px, 20px);
   }
 }
